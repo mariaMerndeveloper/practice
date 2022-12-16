@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ecommerce</title>
+    <!---------------------------------------------- boot strap css----------------------------------------------->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
+    <link rel="stylesheet"
+        href="bootstrap offline files for run/bootstrap-5.0.2-dist/bootstrap-5.0.2-dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- shift alt F : format code
+   making folder: mkdir folder name
+   making file: type null > filname.html
+   for adding bootstrap : type botstarp 5 on google. it give 8 colors 
+
+  use of  "!important : css preference" 
+  grid : only 12 colums
+
+  <!-- 
+         ----------NOTES---------
+        use terminal
+        *read documentation of bootstrap
+        making folder = mkdir foldername
+        
+        Extension: autorename
+        shift + alt + F = for code formating
+        CSS other frameworks: materialui will be used in react
+        bootstrap color customization.
+        Bootstrap container
+        Bootstrap Grid
+         Screens : 
+            extra small : < 576px
+            small:576 - 767px(breakpoint: 566)
+            medium: 766-992(breakpoint : 765)
+            large: 992 - 1200px(breakpoint: 1199)
+            XL: 1200 -1400(breakpoint : )
+            XXL : 1400 -above
+        shourtcut: 
+            .col-md-1*16 
+            multicursor shourcut : alt + click cusor on next row
+            mt-2 : bootstrap marhin top
+
+            btn-sm: small buton, btn-lg: large // by  defualt : mrdium hota ( bus yehi tin hoty no xl , xxl)
+            sari width py button lana (bootstrap 3 mei block hoti thi but in bs 5 we have class of d-grid and d-flex)
+     -->
+
+    -->
+    <h1 class="bg-primary text-warning">without container</h1>
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis iste illum alias tenetur exercitationem
+        assumenda magni voluptatibus consequuntur corporis praesentium, neque distinctio, unde libero laborum maiores?
+        Deleniti dolor quo explicabo.
+    </p>
+
+    <div class="container-fluid">
+        <h1 class="bg-primary text-warning  >ecommerce">with container class</h1>
+        <p>
+            It gives very less spacess left right spaces. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Reiciendis iste illum alias tenetur exercitationem assumenda magni voluptatibus consequuntur corporis
+            praesentium, neque distinctio, unde libero laborum maiores? Deleniti dolor quo explicabo.
+        </p>
+    </div>
+
+    <div class="container">
+        <h1 class="bg-primary text-warning  >ecommerce">with container class</h1>
+        <p>
+            It gives left right spaces. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis iste illum
+            alias tenetur exercitationem assumenda magni voluptatibus consequuntur corporis praesentium, neque
+            distinctio, unde libero laborum maiores? Deleniti dolor quo explicabo.
+        </p>
+    </div>
+    <!--------------------------------------------------bootstrap grid---------------------------------------------------------->
+    <div class="container">
+        <div class="row mt-2">
+            <!-- <div class="col-md-1 bg-primary">1</div>
+        <div class="col-md-1 bg-primary">2</div>
+        <div class="col-md-1 bg-primary">3</div>
+        <div class="col-md-1 bg-primary">4</div>
+        <div class="col-md-1 bg-primary">5</div>
+        <div class="col-md-1 bg-primary">6</div>
+        <div class="col-md-1 bg-primary">7</div>
+        <div class="col-md-1 bg-primary">8</div>
+        <div class="col-md-1 bg-primary">9</div>
+        <div class="col-md-1 bg-primary">10</div>
+        <div class="col-md-1 bg-primary">11</div>
+        <div class="col-md-1 bg-primary">12</div>
+        <div class="col-md-1 bg-primary">13</div>  ------it comes on next libe cuz 12 capicity========
+        <div class="col-md-1 bg-primary">14</div>
+        <div class="col-md-1 bg-primary">15</div>
+        <div class="col-md-1 bg-primary">16</div> -->
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <h4>watches</h4>
+                <p>
+                    It gives left right spaces. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                    iste illum
+                    alias tenetur exercitationem assumenda magni voluptatibus consequuntur corporis praesentium, neque
+                    distinctio, unde libero laborum maiores? Deleniti dolor quo explicabo.
+                </p>
+                <button class="btn btn-outline-primary">Read more</button>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <h4>watches</h4>
+                <p>
+                    It gives left right spaces. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                    iste illum
+                    alias tenetur exercitationem assumenda magni voluptatibus consequuntur corporis praesentium, neque
+                    distinctio, unde libero laborum maiores? Deleniti dolor quo explicabo.
+                </p>
+               <div class="d-grid gap-2">
+                <button class="btn btn-outline-primary btn-sm">Read more</button>
+               </div>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <h4>watches</h4>
+                <p>
+                    It gives left right spaces. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                    iste illum
+                    alias tenetur exercitationem assumenda magni voluptatibus consequuntur corporis praesentium, neque
+                    distinctio, unde libero laborum maiores? Deleniti dolor quo explicabo.
+                </p>
+                <button class="btn btn-outline-primary">Read more</button>
+            </div>
+
+            <div class="col-lg-3 col-md-4 col-sm-6">
+                <h4>watches</h4>
+                <p>
+                    It gives left right spaces. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis
+                    iste illum
+                    alias tenetur exercitationem assumenda magni voluptatibus consequuntur corporis praesentium, neque
+                    distinctio, unde libero laborum maiores? Deleniti dolor quo explicabo.
+                </p>
+                <button class="btn btn-outline-primary">Read more</button>
+            </div>
+
+
+            <!--------------------------------------------------bootstrap js internal---------------------------------------------------------->
+            <script src="bootstrap offline files for run/bootstrap-5.0.2-dist/js/bootstrap.js">
+
+            </script>
+
+            <!-- ------------------------------------------------bootstrap js (bundle)--------------------------------------------------------
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script> -->
+</body>
+
+</html>
